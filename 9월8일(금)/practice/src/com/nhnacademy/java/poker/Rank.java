@@ -20,6 +20,10 @@ public enum Rank {
     private static Random random = new Random();
     private static Rank[] ranks = values();
 
+    public static Rank[] getRanks() {
+        return ranks;
+    }
+
     public static Rank randomRank() {
         return ranks[random.nextInt(12)];
     }
